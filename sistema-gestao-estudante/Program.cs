@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema_gestao_estudantes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace sistema_gestao_estudante
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new form1());
+            Application.Run(new Login_Form());
         }
     }
 }

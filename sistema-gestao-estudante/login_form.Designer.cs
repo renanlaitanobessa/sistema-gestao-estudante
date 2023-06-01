@@ -1,6 +1,6 @@
-﻿namespace sistema_gestao_estudante
+﻿namespace Sistema_gestao_estudantes
 {
-    partial class form1
+    partial class Login_Form
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.txtsenha = new System.Windows.Forms.TextBox();
@@ -41,7 +40,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(184, 154);
@@ -62,6 +60,7 @@
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.Size = new System.Drawing.Size(100, 20);
             this.txtsenha.TabIndex = 3;
+            this.txtsenha.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -95,6 +94,7 @@
             this.btncancelar.TabIndex = 6;
             this.btncancelar.Text = "cancelar";
             this.btncancelar.UseVisualStyleBackColor = false;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click_1);
             // 
             // btnentrar
             // 
@@ -106,8 +106,9 @@
             this.btnentrar.TabIndex = 7;
             this.btnentrar.Text = "entrar";
             this.btnentrar.UseVisualStyleBackColor = false;
+            this.btnentrar.Click += new System.EventHandler(this.btnentrar_Click_1);
             // 
-            // form1
+            // Login_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -121,9 +122,9 @@
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "form1";
+            this.Name = "Login_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "entar";
-            this.Load += new System.EventHandler(this.form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
