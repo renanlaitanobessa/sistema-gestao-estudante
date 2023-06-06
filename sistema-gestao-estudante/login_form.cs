@@ -118,7 +118,7 @@ namespace Sistema_gestao_estudantes
 
             {
 
-                MessageBox.Show("NÃO");
+                MessageBox.Show("Nome de usuário ou senha inválido", "Erro de Login" ,  MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
