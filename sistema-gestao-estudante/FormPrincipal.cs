@@ -16,5 +16,21 @@ namespace sistema_gestao_estudante
         {
             InitializeComponent();
         }
+
+        private void estudanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listaerEstudantesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inserirEstudanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormInserirEstudante inserirEstudante = new FormInserirEstudante();
+            inserirEstudante.Show(this);
+        }
     }
 }

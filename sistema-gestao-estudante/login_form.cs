@@ -110,7 +110,8 @@ namespace Sistema_gestao_estudantes
 
             {
 
-                MessageBox.Show("SIM");
+                // MessageBox.Show("SIM");
+                this.DialogResult = DialogResult.OK; 
 
             }
 
@@ -126,6 +127,11 @@ namespace Sistema_gestao_estudantes
         private void btncancelar_Click_1(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Login_Form_Load(object sender, EventArgs e)
+        {
+
         }
     }
 
